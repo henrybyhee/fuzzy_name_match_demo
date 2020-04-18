@@ -12,14 +12,12 @@ AWS Lambda Custom Runtime with Rust 1.42.0 exposed via API Gateway.
         "against": ["James Doe"]
     }
     ```
-# Archtecture
-
-```mermaid
-
-graph LR
-    A["Browser"] --> B["Api Gateway"] --> C["Lambda"]
+# Architecture
 
 ```
+Browser --> API Gateway --> Lambda
+```
+
 # Quickstart
 
 ## Note
