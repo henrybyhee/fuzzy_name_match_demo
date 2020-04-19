@@ -5,7 +5,7 @@ export function FooterComponent() {
   return (
     <footer>
       <Typography variant="body2">
-        Made by <a href="#">Henry</a>.
+        Made by <a href="https://about.henrybyhee.me/">Henry</a>.
       </Typography>
     </footer>
   );
