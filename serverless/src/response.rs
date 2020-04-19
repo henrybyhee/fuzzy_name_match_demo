@@ -37,6 +37,7 @@ where
                 let body_string = serde_json::to_string(&body).unwrap();
                 Response::builder()
                     .header("Content-Type", "application/json")
+                    .header("Access-Control-Allow-Origin", "*")
                     .status(200)
                     .body(Body::Text(body_string))
                     .unwrap()
@@ -45,6 +46,7 @@ where
                 let body_string = serde_json::to_string(&err_body).unwrap();
                 Response::builder()
                     .header("Content-Type", "application/json")
+                    .header("Access-Control-Allow-Origin", "*")
                     .status(err_body.code)
                     .body(Body::Text(body_string))
                     .unwrap()
